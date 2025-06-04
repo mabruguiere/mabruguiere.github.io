@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="new-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+
+
+<body>
+    <header id="header-accueil">
+        <div id="droite-header">
+            <a href="#article-accueil"><span class="text-header">Présentation</span></a>
+            <a href="#regroupement-projets"><span class="text-header">Projets</span></a>
+            <a href="#mail"><span class="text-header">Contact</span></a>
+        </div>
+    </header>
+
+    <article id="article-accueil">
+        <section id="nom-section">
+            Mathys Bruguiere
+        </section>
+        <section id="preambul-accueil">
+            Étudiant en BUT informatique à Bordeaux
+        </section>
+    </article>
+
+    <section id="projets">
+        <p>Projets</p>
+
+        <article id="regroupement-projets">
+            <a href="sae-graphe.html">
+                <div class="boite-projets" id="boite-graph">
+                    <video autoplay loop muted>
+                        <source src="ressource/sae_graphe.mp4" type="video/mp4">
+                    </video>
+                    <div class="texte">
+                        <p class="titre-projets">Graphe</p>
+                        <p class="text-projet">Ce projet consiste à implémenter plusieurs algorithmes et structure de
+                            données de graphe.</p>
+                        <div class="outils">
+                            <p>java</p>
+                            <p>git</p>
+                            <p>NetBeans</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="sae-web.html">
+                <div class="boite-projets-reverse" id="boite-web">
+                    <video autoplay loop muted>
+                        <source src="ressource/sae_web(1).mp4" type="video/mp4">
+                    </video>
+                    <div class="texte">
+                        <p class="titre-projets">Site Web</p>
+                        <p class="text-projet">Ce projet consiste à créer le site web d'une association sur le theme du
+                            bien-être.</p>
+                        <div class="outils">
+                            <p>html</p>
+                            <p>css</p>
+                            <p>VScode</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="sae-ihm.html">
+                <div class="boite-projets" id="boite-ihm">
+                    <video autoplay loop muted>
+                        <source src="ressource/SAE_IHM(1).mp4" type="video/mp4">
+                    </video>
+                    <div class="texte">
+                        <p class="titre-projets">IHM</p>
+                        <p class="text-projet">Ce projet consiste à implémenter des fonctionnalitées graphique et
+                            interractive à un jeu.</p>
+                        <div class="outils">
+                            <p>c#</p>
+                            <p>git</p>
+                            <p>Visual Studio</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="sae-lowatem.html">
+                <div class="boite-projets-reverse" id="boite-lowatem">
+                    <img src="ressource/lowatem.PNG" alt="image de la sae lowatem">
+                    <div class="texte">
+                        <p class="titre-projets">IA</p>
+                        <p class="text-projet">Ce projet consiste à implémenter des fonctionnalitées à un jeu puis de
+                            développer deux IA jouant à ce dernier.</p>
+                        <div class="outils">
+                            <p>java</p>
+                            <p>git</p>
+                            <p>NetBeans</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="sae-JPO.html">
+                <div class="boite-projets" id="boite-jpo">
+                    <video autoplay loop muted>
+                        <source src="ressource/sae_jpo.mp4" type="video/mp4">
+                    </video>
+                    <div class="texte">
+                        <p class="titre-projets">JPO</p>
+                        <p class="text-projet">Ce projet consiste à travailler en équipe pour créer un jeu visant
+                            l'apprentissage de la programmation.</p>
+                        <div class="outils">
+                            <p>java</p>
+                            <p>git</p>
+                            <p>NetBeans</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <p id="mail">mathys.bruguiere@gmail.com</p>
+        </article>
+    </section>
+</body>
+<script type="module" src="script.js"></script>
+
+</html>

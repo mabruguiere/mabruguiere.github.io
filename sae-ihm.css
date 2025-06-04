@@ -1,0 +1,65 @@
+.police{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+a{
+    text-decoration: none;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: comic;
+}
+
+/*
+header du html
+*/
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4FBF7;
+    width: 100%;
+    top: 0px;
+    padding: 20px;
+    position: sticky;
+    transition: 0.3s ease;
+    z-index: 11;
+}
+
+header:not(.scrolled) span,p {
+  pointer-events: none; 
+}
+
+.scrolled{
+    background-color: #26997B;
+}
+
+.text-header{
+    color: #1D3B31;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.text-header:hover{
+    color: #E6F7ED;
+}
+
+#droite-header{
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+    font-weight: bold;
+}
+
+/*affichage du retex*/
+section{
+    display: flex;
+    justify-content: center;
+}

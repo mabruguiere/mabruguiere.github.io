@@ -1,0 +1,254 @@
+@media screen and (max-width: 700px) {
+    a>div{
+        flex-direction: column;
+        height: max-content;
+        flex-wrap: wrap;
+        margin-top: auto;
+        padding: 1rem;
+        margin-top: 200px;
+    }   
+}
+
+a{
+    text-decoration: none;
+}
+
+.police{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: comic;
+}
+
+/*
+body du html
+*/
+body{
+    background-color: #F4FBF7;
+}
+
+/*
+header du html
+*/
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4FBF7;
+    width: 100%;
+    top: 0px;
+    padding: 20px;
+    position: sticky;
+    transition: 0.3s ease;
+    z-index: 11;
+}
+
+header:not(.scrolled) span,p {
+  pointer-events: none; 
+}
+
+.scrolled{
+    background-color: #26997B;
+}
+
+.text-header{
+    color: #1D3B31;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.text-header:hover{
+    color: #E6F7ED;
+}
+
+#droite-header{
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+    font-weight: bold;
+}
+
+/*
+texte d'accueil
+*/
+
+#article-accueil{
+    padding-top: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+    padding-left: 80px;
+    font-size: 150px;
+    color: #1D3B31;
+}
+
+#preambul-accueil{
+    padding-top: 40px;
+    font-size: 40px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/*
+Partie concernant les projets
+*/
+
+#projets{
+    padding-top: 400px;
+    padding: auto;
+    display: flex;
+    height: 400px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+#projets > p{
+    color: #1D3B31;
+    font-size: 70px;
+    font-weight: 300;
+}
+
+#regroupement-projets{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.boite-projets{
+    height: 100%;
+    display: flex;
+    /*background-color: #E6F7ED;*/
+    /*border-radius: 25px;
+    /*border: solid 2px;
+    /*border-color: #8BCEB6;*/
+    margin-top: 30px;
+    flex-direction: row;
+    transition: 0.5s;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.boite-projets-reverse{
+    height: 100%;
+    display: flex;
+    /*background-color: #E6F7ED;*/
+    /*border-radius: 25px;
+    /*border: solid 2px;
+    /*border-color: #8BCEB6;*/
+    margin-top: 30px;
+    flex-direction: row-reverse;
+    transition: 0.5s;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.boite-projets:hover{
+    /*background-color: #D6F1E3;*/
+}
+
+.boite-projets img{
+    margin-top: 8px;
+    height: 60%;
+    width: fit-content;
+    border-radius: 20px;
+}
+
+video{
+    margin-top: 8px;
+    height: 80%;
+    width: fit-content;
+    border-radius: 20px;
+}
+
+.boite-projets-reverse img{
+    margin-top: 8px;
+    height: 60%;
+    width: fit-content;
+    border-radius: 20px;
+}
+
+.titre-projets{
+    color: #1D3B31;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.text-projet{
+    color: #208368;
+    text-align: center;
+    font-size: 20px;
+}
+
+section a{
+    text-decoration: none;
+    width: fit-content;
+    height: 400px;
+    cursor: pointer;
+}
+
+div.texte {
+    z-index: 10;
+    width: 40%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s;
+    border: 1px solid;
+    border-radius: 20px;
+    border-color: #8BCEB6;
+}
+
+div.texte:hover{
+    background-color: #E6F7ED;
+}
+
+.outils {
+    display: flex;
+    flex-direction: row;
+}
+
+p{
+    padding: 5px;
+}
+
+.outils p{
+    border-radius: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #208368
+}
+
+/*
+footer
+*/
+
+#mail {
+    text-align: center;
+    width: 100%;
+    border-top: solid 1px;
+    margin-top: 50px;
+    font-size: 25px;
+    color: #208368
+}
