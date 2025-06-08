@@ -189,6 +189,7 @@ body du html
 body {
     background-color: #F4FBF7;
     overflow-x: hidden;
+    overflow: hidden;
 }
 
 /*
