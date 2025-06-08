@@ -48,6 +48,7 @@
         height: auto;
         width: 90%;
         max-width: 300px;
+        overflow: hidden;
     }
 
     div.texte {
@@ -75,8 +76,9 @@
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     header {
-        flex-direction: row;
+        flex-direction: column;
         padding: 15px;
+        color: red;
     }
 
     #droite-header {
@@ -109,7 +111,7 @@
 
     .boite-projets,
     .boite-projets-reverse {
-        flex-direction: column;
+        flex-direction: column !important;
         height: auto;
         gap: 20px;
         padding: 20px;
