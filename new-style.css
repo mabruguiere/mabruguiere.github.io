@@ -28,7 +28,7 @@
         padding-top: 100px;
     }
 
-    #projets > p {
+    #projets>p {
         font-size: 40px;
         text-align: center;
     }
@@ -101,7 +101,7 @@
         padding-top: 150px;
     }
 
-    #projets > p {
+    #projets>p {
         font-size: 50px;
         text-align: center;
     }
@@ -115,11 +115,23 @@
     }
 
     .boite-projets img,
-    .boite-projets-reverse img,
-    video {
-        height: auto;
-        width: 90%;
+    .boite-projets-reverse img {
+        margin-top: 8px;
+        width: 100%;
         max-width: 500px;
+        height: auto;
+        border-radius: 20px;
+        display: block;
+    }
+
+
+    video {
+        margin-top: 8px;
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        border-radius: 20px;
+        display: block;
     }
 
     div.texte {
@@ -145,19 +157,28 @@
     }
 }
 
+@supports (-webkit-touch-callout: none) {
+    video {
+        object-fit: cover;
+        width: 100% !important;
+        max-width: 500px;
+        height: auto !important;
+    }
+}
 
-a{
+
+a {
     text-decoration: none;
 }
 
-.police{
+.police {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: comic;
@@ -166,7 +187,7 @@ a{
 /*
 body du html
 */
-body{
+body {
     background-color: #F4FBF7;
 }
 
@@ -187,26 +208,27 @@ header {
     z-index: 11;
 }
 
-header:not(.scrolled) span,p {
-  pointer-events: none; 
+header:not(.scrolled) span,
+p {
+    pointer-events: none;
 }
 
-.scrolled{
+.scrolled {
     background-color: #26997B;
 }
 
-.text-header{
+.text-header {
     color: #1D3B31;
     font-family: Arial, Helvetica, sans-serif;
     transition: 0.3s;
     cursor: pointer;
 }
 
-.text-header:hover{
+.text-header:hover {
     color: #E6F7ED;
 }
 
-#droite-header{
+#droite-header {
     display: flex;
     justify-content: space-around;
     width: 20%;
@@ -217,7 +239,7 @@ header:not(.scrolled) span,p {
 texte d'accueil
 */
 
-#article-accueil{
+#article-accueil {
     padding-top: 300px;
     display: flex;
     justify-content: center;
@@ -229,7 +251,7 @@ texte d'accueil
     color: #1D3B31;
 }
 
-#preambul-accueil{
+#preambul-accueil {
     padding-top: 40px;
     font-size: 40px;
     font-family: "Inter", sans-serif;
@@ -238,7 +260,7 @@ texte d'accueil
     font-style: normal;
 }
 
-#preambul-accueil-2{
+#preambul-accueil-2 {
     font-size: 40px;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -253,7 +275,7 @@ texte d'accueil
 Partie concernant les projets
 */
 
-#projets{
+#projets {
     padding-top: 410px;
     padding: auto;
     display: flex;
@@ -263,13 +285,13 @@ Partie concernant les projets
     flex-direction: column;
 }
 
-#projets > p{
+#projets>p {
     color: #1D3B31;
     font-size: 70px;
     font-weight: 300;
 }
 
-#regroupement-projets{
+#regroupement-projets {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -280,7 +302,7 @@ Partie concernant les projets
     width: 100%;
 }
 
-.boite-projets{
+.boite-projets {
     height: 100%;
     display: flex;
     margin-top: 30px;
@@ -289,9 +311,13 @@ Partie concernant les projets
     align-items: center;
     justify-content: space-around;
     cursor: pointer;
+    overflow: hidden;
+    max-width: 900px;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
-.boite-projets-reverse{
+.boite-projets-reverse {
     height: 100%;
     display: flex;
     margin-top: 30px;
@@ -300,43 +326,47 @@ Partie concernant les projets
     align-items: center;
     justify-content: space-around;
     cursor: pointer;
+    overflow: hidden;
+    max-width: 900px;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 
-.boite-projets img{
+.boite-projets img {
     margin-top: 8px;
     height: 60%;
     width: fit-content;
     border-radius: 20px;
 }
 
-video{
+video {
     margin-top: 8px;
     height: 80%;
     width: fit-content;
     border-radius: 20px;
 }
 
-.boite-projets-reverse img{
+.boite-projets-reverse img {
     margin-top: 8px;
     height: 60%;
     width: fit-content;
     border-radius: 20px;
 }
 
-.titre-projets{
+.titre-projets {
     color: #1D3B31;
     font-weight: 100;
     font-size: 30px;
 }
 
-.text-projet{
+.text-projet {
     color: #208368;
     text-align: center;
     font-size: 20px;
 }
 
-section a{
+section a {
     text-decoration: none;
     width: fit-content;
     height: 400px;
@@ -356,7 +386,7 @@ div.texte {
     border-color: #8BCEB6;
 }
 
-div.texte:hover{
+div.texte:hover {
     background-color: #E6F7ED;
 }
 
@@ -365,11 +395,11 @@ div.texte:hover{
     flex-direction: row;
 }
 
-p{
+p {
     padding: 5px;
 }
 
-.outils p{
+.outils p {
     border-radius: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 18px;
