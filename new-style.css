@@ -157,15 +157,6 @@
     }
 }
 
-@supports (-webkit-touch-callout: none) {
-    video {
-        object-fit: cover;
-        width: 100% !important;
-        max-width: 500px;
-        height: auto !important;
-    }
-}
-
 
 a {
     text-decoration: none;
@@ -312,9 +303,6 @@ Partie concernant les projets
     justify-content: space-around;
     cursor: pointer;
     overflow: hidden;
-    max-width: 900px;
-    width: 100%;
-    flex-wrap: wrap;
 }
 
 .boite-projets-reverse {
@@ -327,9 +315,6 @@ Partie concernant les projets
     justify-content: space-around;
     cursor: pointer;
     overflow: hidden;
-    max-width: 900px;
-    width: 100%;
-    flex-wrap: wrap;
 }
 
 
