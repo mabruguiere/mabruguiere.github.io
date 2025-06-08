@@ -72,6 +72,80 @@
     }
 }
 
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    header {
+        flex-direction: row;
+        padding: 15px;
+    }
+
+    #droite-header {
+        width: 60%;
+        justify-content: space-evenly;
+    }
+
+    #article-accueil {
+        padding-top: 250px;
+        font-size: 100px;
+        padding-left: 40px;
+        text-align: center;
+    }
+
+    #preambul-accueil,
+    #preambul-accueil-2 {
+        font-size: 28px;
+        padding: 30px;
+        text-align: center;
+    }
+
+    #projets {
+        padding-top: 150px;
+    }
+
+    #projets > p {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .boite-projets,
+    .boite-projets-reverse {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .boite-projets img,
+    .boite-projets-reverse img,
+    video {
+        height: auto;
+        width: 90%;
+        max-width: 500px;
+    }
+
+    div.texte {
+        width: 80%;
+        font-size: 18px;
+    }
+
+    .titre-projets {
+        font-size: 26px;
+    }
+
+    .text-projet {
+        font-size: 18px;
+    }
+
+    .outils p {
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    #mail {
+        font-size: 28px;
+    }
+}
+
+
 a{
     text-decoration: none;
 }
