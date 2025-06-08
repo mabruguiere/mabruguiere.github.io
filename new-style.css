@@ -101,12 +101,23 @@ texte d'accueil
     font-style: normal;
 }
 
+#preambul-accueil-2{
+    font-size: 40px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: #1D3B31;
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+
 /*
 Partie concernant les projets
 */
 
 #projets{
-    padding-top: 400px;
+    padding-top: 410px;
     padding: auto;
     display: flex;
     height: 400px;
@@ -135,10 +146,6 @@ Partie concernant les projets
 .boite-projets{
     height: 100%;
     display: flex;
-    /*background-color: #E6F7ED;*/
-    /*border-radius: 25px;
-    /*border: solid 2px;
-    /*border-color: #8BCEB6;*/
     margin-top: 30px;
     flex-direction: row;
     transition: 0.5s;
@@ -150,10 +157,6 @@ Partie concernant les projets
 .boite-projets-reverse{
     height: 100%;
     display: flex;
-    /*background-color: #E6F7ED;*/
-    /*border-radius: 25px;
-    /*border: solid 2px;
-    /*border-color: #8BCEB6;*/
     margin-top: 30px;
     flex-direction: row-reverse;
     transition: 0.5s;
@@ -162,9 +165,6 @@ Partie concernant les projets
     cursor: pointer;
 }
 
-.boite-projets:hover{
-    /*background-color: #D6F1E3;*/
-}
 
 .boite-projets img{
     margin-top: 8px;
@@ -249,6 +249,6 @@ footer
     width: 100%;
     border-top: solid 1px;
     margin-top: 50px;
-    font-size: 25px;
+    font-size: 40px;
     color: #208368
 }
