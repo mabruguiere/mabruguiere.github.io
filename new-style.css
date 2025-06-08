@@ -157,6 +157,14 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    #article-accueil {
+        font-size: 60px;
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+    }
+}
 
 a {
     text-decoration: none;
@@ -180,6 +188,7 @@ body du html
 */
 body {
     background-color: #F4FBF7;
+    overflow-x: hidden;
 }
 
 /*
